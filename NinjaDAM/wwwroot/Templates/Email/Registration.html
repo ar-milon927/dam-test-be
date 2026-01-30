@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome - NinjaDAM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #28a745;
+        }
+
+            .header h2 {
+                color: #28a745;
+                margin: 0;
+            }
+
+        .content {
+            padding: 20px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .otp-box {
+            background: #f0f4ff;
+            border: 1px dashed #28a745;
+            color: #28a745;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #888;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Welcome to NinjaDAM</h2>
+        </div>
+        <div class="content">
+            <p>Hi <strong>{{FirstName}} {{LastName}}</strong>,</p>
+            <p>Your account has been created successfully and is pending approval from the SuperAdmin.</p>
+            <p>Your temporary password is:</p>
+            <div class="otp-box">{{TemporaryPassword}}</div>
+            <p>Once approved, you will receive a confirmation email.Please reset your password on first login.</p>
+            <p>Thank you for joining the NinjaDAM platform!</p>
+        </div>
+        <div class="footer">
+            <p>&copy; {{Year}} NinjaDAM. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
